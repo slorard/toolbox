@@ -1,7 +1,7 @@
 <template>
-    <a class="tool-card" :href="toolLink" target="_blank" rel="noopener noreferrer">
+    <router-link :to="toolLink"  class="tool-card" rel="noopener noreferrer">
         <h1 style="margin: 0px; text-align: center">{{ toolTitle }}</h1>
-    </a>
+    </router-link>
 </template>
 
 <script>
@@ -27,9 +27,7 @@ export default {
     }
 
     .tool-card:hover {
-        width: 250px;
-        max-width: 250px;
-        height: 250px
+        transform: scale(1.2);
     }
 
 </style>

@@ -1,28 +1,31 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <div id="content">
+      <ToolCard tool-title="Memes" tool-link="https://github.com/slorard"/>
+      <ToolCard tool-title="Download IG video" tool-link="https://github.com/slorard"/>
+      <ToolCard tool-title="Clip YouTube" tool-link="https://github.com/slorard"/>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import ToolCard from "./components/ToolCard"  
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ToolCard,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 240px);
+    grid-gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+  }
 </style>

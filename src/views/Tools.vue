@@ -1,20 +1,25 @@
 <template>
-    <div id="content">
-        <ToolCard tool-title="Memes" tool-link="/memes"/>
-        <ToolCard tool-title="Download IG video" tool-link="/download-ig-video"/>
-        <ToolCard tool-title="Clip YouTube" tool-link="/clip-youtube"/>
-    </div>
+  <div id="content">
+    <ToolCard tool-title="Memes" tool-link="/memes"/>
+    <ToolCard tool-title="Download IG video" tool-link="/download-ig-video"/>
+    <ToolCard tool-title="Clip YouTube" tool-link="/clip-youtube"/>
+  </div>
 </template>
 
 <script>
-import ToolCard from "../components/ToolCard"  
+  import ToolCard from "../components/ToolCard"
+  import CustomCursor from "../components/CustomCursor"
 
-export default {
-  name: 'Tools',
-  components: {
-      ToolCard
+  export default {
+    name: 'Tools',
+    components: {
+      ToolCard,
+      CustomCursor
+    },
+    mounted(){
+      CustomCursor.methods.selectAllTagA()
+    }
   }
-}
 </script>
 
 <style>

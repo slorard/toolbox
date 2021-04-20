@@ -1,22 +1,19 @@
 <template>
   <div id="app">
-    <router-link to="/"  id="home-btn"> 
-      <img src="./assets/logo.png" alt="vue logo" width="50px" height="50px">
-      Home
-    </router-link>
-    
     <router-view/>
+    <CustomCursor/>
   </div>
 </template>
 
 <script>
-import ToolCard from "./components/ToolCard" 
-export default {
-  name: 'App',
-  components: {
-      ToolCard
+  import CustomCursor from "./components/CustomCursor"
+
+  export default {
+    name: 'App',
+    components: {
+      CustomCursor
+    }
   }
-}
 </script>
 
 <style>
@@ -31,7 +28,6 @@ export default {
     text-decoration: none;
     height: 50px;
     width: 100px;
-
   }
 </style>
 

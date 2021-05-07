@@ -30,7 +30,7 @@ export default {
 
 <style>
   * {
-    cursor: none;
+    /* cursor: none; */
   }
 
   #cursor {

@@ -20,14 +20,5 @@
   h1 {
    color: white
   }
-
-  #home-btn {
-    color: white; 
-    display: flex; 
-    align-items: center; 
-    text-decoration: none;
-    height: 50px;
-    width: 100px;
-  }
 </style>
 

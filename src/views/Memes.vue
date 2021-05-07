@@ -1,17 +1,20 @@
 <template>
   <div>
     <Header/>
-    <h1>hacer memes</h1>
+    <ImageEditor/>
   </div>
 </template>
 
 
 <script>
-import Header from "../components/Header"
+  import Header from "../components/Header"
+  import ImageEditor from "../components/ImageEditor"
 
-export default {
-  components: {
-    Header
+  export default {
+    components: {
+      Header,
+      ImageEditor
+    }
   }
-}
 </script>
+

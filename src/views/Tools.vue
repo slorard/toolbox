@@ -22,7 +22,7 @@
   }
 </script>
 
-<style>
+<style scoped>
   #content {
     display: grid;
     grid-template-columns: repeat(auto-fit, 240px);

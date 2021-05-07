@@ -10,6 +10,8 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "croppr": "^2.3.1",
+    "dom-to-image": "^2.6.0",
     "vue": "^2.5.2",
     "vue-router": "^3.5.1"
   },
